@@ -348,14 +348,29 @@ footer ul {
 /* RESPONSIVE BREAKPOINTS */
 
 @media (max-width: 940px) {
-
+    /* adjust position of h1 
+    adjust width of foot care to sit beside photo
+    adjust read more button to sit under content
+    adjust width of instagram section to be center aligned */
 }
 
 @media (max-width: 768px) {
-
+    /* adjust position of h1
+    adjust width of foot care to sit beside photo
+    adjust content area in giving back
+    adjust width of photos in gram
+    fix lower margin on subscribe button */
 }
 
 @media (max-width: 480px) {
+    /* make burger menu work
+    align read more buttons in the center
+    change position of photos in specialize and foot care
+    adjust alignment of giving back photo
+    fix fonts
+    fix content under contact */
+
+
     h1 {
         color: #186684;
         font-size: 8.5rem;
