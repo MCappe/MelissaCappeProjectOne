@@ -115,7 +115,7 @@ i.fa-bars {
     visibility: hidden;
 }
 
-input {
+#check {
         display: none;
     }
 
@@ -127,25 +127,6 @@ input {
     padding: 10px;
 }
 
-/* .collapsibleMenu label {
-    display: block;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    
-} */
-
-/* input#menu1 {
-    display: none;
-} */
-
-/* i.fa-bars {
-    display: none;
-    position: absolute;
-    right: 0;
-    bottom: 900px;
-    font-size: 4rem;
-    color: #186684;;
-} */
 
 .socialIcons {
     color: #E85B26;
@@ -176,7 +157,7 @@ header nav {
 
 .leftContent,
 .rightPhoto {
-    float: left;
+    float: right;
     width: 50%;
 }
 
@@ -187,11 +168,13 @@ header nav {
 }
 
 .leftContent {
-    padding: 100px 50px 100px 50px;
+    padding: 100px 50px 135px 50px;
+    line-height: 1.5;
 }
 
 .rightContent {
     padding: 100px 50px 100px 50px;
+    line-height: 1.5;
 }
 
 /* GIVING BACK SECTION */
@@ -199,6 +182,7 @@ header nav {
 .givingBack {
     background-color: #F4F4F4;
     padding: 50px 0;
+    line-height: 1.5;
 }
 
 .givingBack img {
@@ -236,12 +220,16 @@ header nav {
 
 .moreIcons i {
     color: #E85B26;
+    font-size: 5rem;
+    padding-bottom: 15px;
 }
 
 .moreIcons li {
     list-style: none;
     display: inline-block;
     padding: 30px;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 /* THE GRAM SECTION */
@@ -352,25 +340,77 @@ footer ul {
 /* RESPONSIVE BREAKPOINTS */
 
 @media (max-width: 940px) {
-    /* adjust position of h1 
-    adjust width of foot care to sit beside photo
-    adjust read more button to sit under content
-    adjust width of instagram section to be center aligned */
+    h1 {
+        left: 350px;
+    }
+
+    .leftContent,
+    .rightPhoto {
+        width: 50%;
+}
+
+    .leftContent {
+        padding-top: 50px;
+        padding-bottom: 28px;
+    }
+
+    .rightContent,
+    .leftPhoto {
+        width: 50%;
+    }
+
+    .rightContent {
+        padding-top: 50px;
+        padding-bottom: 28px;
+    }
+
+    .givingBack {
+    padding: 50px 0;
+    line-height: 1.5;
+}
+
+    .givingBack img {
+        
+        width: 25%;
+        height: 200px;
+        margin-bottom: 80px;
+        margin-top: 50px;
+        padding-right: 40px;
+        margin-left: 100px;
+    }
+
+    .instagram li {
+        width: 28%;
+    }
+
+.instagram {
+    margin-left: 20px;
+}
+
 }
 
 @media (max-width: 768px) {
-    /* adjust position of h1
-    adjust width of foot care to sit beside photo
-    adjust content area in giving back
-    adjust width of photos in gram
-    fix lower margin on subscribe button */
+    .leftContent,
+    .rightPhoto,
+    .rightContent,
+    .leftPhoto {
+        width: 100%;
+}
+
+    .leftContent,
+    .rightContent {
+        padding-bottom: 50px;
+    }
+
+    .form button {
+        width: 78%;
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-width: 480px) {
-    /* make burger menu work
-    align read more buttons in the center
-    change position of photos in specialize and foot care
-    adjust alignment of giving back photo
+    /* 
+    footer nav - currently column, need row (block/inline-block)
     fix fonts
     fix content under contact */
 
@@ -384,7 +424,7 @@ footer ul {
         width: 320px;
         position: absolute;
         top: 275px;
-        right: 70px;
+        left: 80px;
         font-weight: lighter;
 
 }
@@ -406,7 +446,7 @@ footer ul {
         display: block;
     }
 
-    input {
+    #check {
         position: absolute;
         left: -100000px;
     }
@@ -427,6 +467,10 @@ footer ul {
         display: none;
     }
 
+    h2 {
+        text-align: center;
+    }
+
     .leftContent,
     .rightPhoto {
         clear: both;
@@ -439,10 +483,19 @@ footer ul {
         width: 100%;
 }
 
+    .readMore {
+        margin-left: 100px;
+    }
+
+    .givingBack .readMore {
+        margin-left: 170px;
+    }
+
     .givingBack img {
         clear: both;
-        width: 80%;  
-        margin-bottom: 40px;
+        width: 100%;  
+        height: 300px;
+        margin: 0 0 40px 20px;
 }
     .givingBack h2 {
         text-align: center;
@@ -453,9 +506,6 @@ footer ul {
         padding-left: 10px;
     }
 
-    /* .readMore {
-        margin-left: 
-    } */
 
     .moreIcons li {
         list-style: none;
@@ -465,7 +515,7 @@ footer ul {
 
 
     .moreIcons {
-        height: 60vh;
+        height: 70vh;
         font-family: 'Catamaran', sans-serif;
         font-size: 3rem;
         color: #186684;
@@ -486,15 +536,11 @@ footer ul {
     .instagram li {
         float: left;
         width: 40%;
+        margin-left: 0px;
 }
     .instagram li:nth-child(3n) {
         display: none;
 }
-
-    footer ul li {
-        padding: 35px;
-        margin: 0;
-    }
 
     .contact,
     .form {
@@ -502,8 +548,11 @@ footer ul {
         width: 100%;
         text-align: center;
 }
-
-    .form input, 
+    #userEmail {
+        display: block;
+        margin: auto;
+    }
+    
     .form button {
         display: block;
         margin: auto;
