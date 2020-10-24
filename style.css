@@ -8,16 +8,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .srOnly { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-/* colours:
-Pale Lilac: #E3E4EA
-Reddish Orange: #E85B26
-Light Grey: #F4F4F4
-Light Navy: #186684
-Dark Grey: #1F2022 */
-
-/*  font-family: 'Catamaran', sans-serif;
-    font-family: 'Nova Flat', cursive; */
-
 /* GLOBAL STYLES */
 
 * {
@@ -47,11 +37,7 @@ a {
 h1 {
     color: #186684;
     font-size: 8.5rem;
-    /* width: 100px; */
     background-color: #f4f4f4c9;
-    /* position: relative;
-    top: 120px;
-    left: 550px; */
     font-family: 'Nova Flat', cursive;
     display: inline-block;
     width: 320px;
@@ -199,22 +185,19 @@ header nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
-    font-family: 'Catamaran', sans-serif;
-    font-size: 3rem;
+    height: 450px;
     color: #186684;
 
 }
 
 .awesomeFont {
     background-color: #f4f4f4;
-    width: 500px;
+    width: 700px;
     padding: 30px 20px 30px 20px;
     margin: auto;
     text-align: center;
     position: relative;
     top: 100px;
-    
 }
 
 
@@ -228,8 +211,11 @@ header nav {
     list-style: none;
     display: inline-block;
     padding: 30px;
-    font-weight: 700;
-    font-size: 20px;
+}
+
+.moreIcons p {
+    font-family: 'Nova Flat', cursive;
+    font-size: 3rem;
 }
 
 /* THE GRAM SECTION */
@@ -292,6 +278,7 @@ footer ul {
 .contact p {
     width: 325px;
     padding-left: 40px;
+    line-height: 1rem;
 }
 
 .form h2 {
@@ -390,6 +377,11 @@ footer ul {
 }
 
 @media (max-width: 768px) {
+
+    h1 {
+        left: 200px;
+    }
+
     .leftContent,
     .rightPhoto,
     .rightContent,
@@ -402,6 +394,11 @@ footer ul {
         padding-bottom: 50px;
     }
 
+    .givingBack img {
+        width: 30%;
+        margin-left: 20px;
+    }
+
     .form button {
         width: 78%;
         margin-bottom: 15px;
@@ -410,7 +407,6 @@ footer ul {
 
 @media (max-width: 480px) {
     /* 
-    footer nav - currently column, need row (block/inline-block)
     fix fonts
     fix content under contact */
 
@@ -450,10 +446,7 @@ footer ul {
         position: absolute;
         left: -100000px;
     }
-    nav ul li {
-        float: left;
-        clear: both;
-    }
+    
     header nav {
         position: absolute;
         top: 60px;
@@ -513,14 +506,13 @@ footer ul {
         padding: 30px;
 }
 
-
     .moreIcons {
-        height: 70vh;
+        height: 80vh;
         font-family: 'Catamaran', sans-serif;
         font-size: 3rem;
         color: #186684;
         padding-top: 70px;
-        background-position: center;
+        background-position: 35%;
 }
 
     .awesomeFont {
@@ -541,6 +533,11 @@ footer ul {
     .instagram li:nth-child(3n) {
         display: none;
 }
+
+    .contact p {
+        text-align: center;
+        width: 100%;
+    }
 
     .contact,
     .form {
@@ -563,9 +560,8 @@ footer ul {
         margin-bottom: 10px;
     }
 
-    .contact p {
+    /* .contact p {
         padding-left: 50px;
         width: 100%;
-    }
-
+    } */
 }
