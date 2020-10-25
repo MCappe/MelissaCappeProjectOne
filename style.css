@@ -126,6 +126,11 @@ i.fa-bars {
     padding: 10px;
 }
 
+.menu:hover,
+.menu:focus {
+    color: #E85B26;
+}
+
 .socialIcons {
     color: #E85B26;
     float: right;
@@ -139,7 +144,7 @@ i.fa-bars {
 
 .socialIcons li:hover,
 .socialIcons li:focus {
-    color: black;
+    color: #186684;
 }
 
 header nav {
@@ -149,6 +154,11 @@ header nav {
 
 .redOne {
     color: #E85B26;
+}
+
+.redOne:hover,
+.redOne:focus {
+    color: #186684;
 }
 
 /* SPECIALIZE SECTION */
@@ -204,6 +214,8 @@ header nav {
 
 }
 
+
+
 .awesomeFont {
     background-color: #f4f4f4;
     width: 700px;
@@ -219,6 +231,11 @@ header nav {
     color: #E85B26;
     font-size: 5rem;
     padding-bottom: 15px;
+}
+
+.moreIcons i:hover,
+.moreIcons i:focus {
+    color: #186684;
 }
 
 .moreIcons li {
@@ -350,9 +367,12 @@ footer ul {
         width: 50%;
 }
 
-    .leftContent {
+    .leftContent,
+    .rightContent {
         padding-top: 50px;
         padding-bottom: 28px;
+        /* max-height: 290px; */
+        overflow: hidden;
     }
 
     .rightContent,
@@ -363,6 +383,8 @@ footer ul {
     .rightContent {
         padding-top: 50px;
         padding-bottom: 28px;
+        /* max-height: 290px; */
+        overflow: hidden;
     }
 
     .givingBack {
@@ -387,6 +409,24 @@ footer ul {
 .instagram {
     margin-left: 20px;
 }
+
+#userEmail {
+        display: block;
+        margin: auto;
+        width: 90%;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Catamaran', sans-serif;
+        padding: 20px 0 20px 0;
+    }
+
+.form button {
+        display: block;
+        margin: auto;
+        width: 90%;
+        margin-bottom: 10px;
+        padding: 10px 0 10px 0;
+    }
 
 }
 
@@ -414,10 +454,45 @@ footer ul {
         margin-left: 20px;
     }
 
-    .form button {
+    /* .form button {
         width: 78%;
         margin-bottom: 15px;
+    } */
+
+    footer nav ul li {
+        font-size: 2rem;
+        padding: 30px;
     }
+
+    .contact p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact,
+    .form {
+        clear: both;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* #userEmail {
+        display: block;
+        margin: auto;
+        width: 90%;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Catamaran', sans-serif;
+        padding: 20px 0 20px 0;
+    }
+    
+    .form button {
+        display: block;
+        margin: auto;
+        width: 90%;
+        margin-bottom: 10px;
+        padding: 10px 0 10px 0;
+    } */
 }
 
 @media (max-width: 480px) {
@@ -541,38 +616,5 @@ footer ul {
         display: none;
     }
 
-    footer nav ul li {
-        font-size: 2rem;
-        padding: 30px;
-    }
-
-    .contact p {
-        text-align: center;
-        width: 100%;
-    }
-
-    .contact,
-    .form {
-        clear: both;
-        width: 100%;
-        text-align: center;
-    }
-
-    #userEmail {
-        display: block;
-        margin: auto;
-        width: 90%;
-        text-align: center;
-        font-size: 1.5rem;
-        font-family: 'Catamaran', sans-serif;
-        padding: 20px 0 20px 0;
-    }
     
-    .form button {
-        display: block;
-        margin: auto;
-        width: 90%;
-        margin-bottom: 10px;
-        padding: 10px 0 10px 0;
-    }
 }
