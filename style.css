@@ -454,10 +454,27 @@ footer ul {
         margin-left: 20px;
     }
 
-    /* .form button {
-        width: 78%;
-        margin-bottom: 15px;
-    } */
+        .moreIcons p {
+        font-family: 'Nova Flat', cursive;
+    }
+
+    .moreIcons {
+        height: 75vh;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 3rem;
+        color: #186684;
+        padding-top: 70px;
+        background-position: 30%;
+    }
+
+    .awesomeFont {
+        width: 65%;
+        padding: 0 20px 0 20px;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        top: 0px;
+}
 
     footer nav ul li {
         font-size: 2rem;
@@ -476,23 +493,6 @@ footer ul {
         text-align: center;
     }
 
-    /* #userEmail {
-        display: block;
-        margin: auto;
-        width: 90%;
-        text-align: center;
-        font-size: 1.5rem;
-        font-family: 'Catamaran', sans-serif;
-        padding: 20px 0 20px 0;
-    }
-    
-    .form button {
-        display: block;
-        margin: auto;
-        width: 90%;
-        margin-bottom: 10px;
-        padding: 10px 0 10px 0;
-    } */
 }
 
 @media (max-width: 480px) {
@@ -584,29 +584,6 @@ footer ul {
         display: block;
         padding: 30px;
 }
-
-    .moreIcons p {
-        font-family: 'Nova Flat', cursive;
-    }
-
-    .moreIcons {
-        height: 75vh;
-        font-family: 'Catamaran', sans-serif;
-        font-size: 3rem;
-        color: #186684;
-        padding-top: 70px;
-        background-position: 30%;
-    }
-
-    .awesomeFont {
-        width: 65%;
-        padding: 0 20px 0 20px;
-        margin: auto;
-        text-align: center;
-        position: relative;
-        top: 0px;
-}
-
     .instagram li {
         float: left;
         width: 40%;
@@ -615,6 +592,4 @@ footer ul {
     .instagram li:nth-child(3n) {
         display: none;
     }
-
-    
 }
