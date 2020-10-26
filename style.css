@@ -435,7 +435,7 @@ footer ul {
     }
 
     .moreIcons {
-        height: 75vh;
+        height: 60vh;
         font-family: 'Catamaran', sans-serif;
         font-size: 3rem;
         color: #186684;
@@ -552,6 +552,10 @@ footer ul {
 
     .givingBack p {
         padding-left: 10px;
+    }
+
+    .moreIcons {
+        height: 75vh;
     }
 
     .moreIcons li {
